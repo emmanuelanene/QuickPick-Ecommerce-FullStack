@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+
+    environment:
+      MYSQL_DATABASE: quickpick-db
+      MYSQL_ROOT_PASSWORD: emmanuel
+
+    ports:
+      - "3307:3306"
